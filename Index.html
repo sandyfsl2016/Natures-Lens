@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nature's Lens: Journal of Forensic Science - A publication by the State Forensic Science Laboratory, Raipur, Chhattisgarh, featuring cutting-edge research in forensic science.">
+    <meta name="keywords" content="forensic science, journal, research, explosive residue, toxicology, narcotics, State Forensic Science Laboratory, Raipur">
+    <meta name="author" content="State Forensic Science Laboratory, Raipur">
+    <meta property="og:title" content="Nature's Lens: Journal of Forensic Science">
+    <meta property="og:description" content="A publication by the State Forensic Science Laboratory, Raipur, featuring cutting-edge research in forensic science.">
+    <meta property="og:image" content="https://yourwebsite.com/path/to/image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://yourwebsite.com">
+    <title>Nature's Lens: Journal of Forensic Science</title>
+    <link rel="icon" type="image/png" href="path/to/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode header, .dark-mode nav, .dark-mode footer {
+            background-color: #1e1e1e;
+        }
+
+        header {
+            background: linear-gradient(90deg, #002855, #005792);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        header img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        nav {
+            background-color: #003f6b;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #005792;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #003f6b;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-left: auto;
+            padding: 5px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #005792;
+            color: white;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #003f6b;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .main-content, .sidebar {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .article {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .article h3 {
+            margin: 0 0 10px;
+            color: #002855;
+            transition: color 0.3s;
+        }
+
+        .article h3:hover {
+            color: #005792;
+        }
+
+        .article p {
+            margin: 5px 0;
+        }
+
+        .sidebar h2 {
+            color: #002855;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #005792;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #003f6b;
+        }
+
+        footer {
+            background-color: #002855;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-info {
+            font-size: 14px;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ffd700;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: #005792;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .pagination a.active {
+            background-color: #005792;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #005792;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #back-to-top:hover {
+            background-color: #003f6b;
+        }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #005792;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .main-content {
+                margin-right: 0;
+            }
+
+            .search-bar {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .search-bar input {
+                width: 70%;
+            }
+
+            .search-bar button {
+                width: 30%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #005792;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        #dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        #dark-mode-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        #dark-mode-toggle img {
+            height: 24px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .dark-mode #dark-mode-toggle img {
+            filter: brightness(0) invert(0);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <img src="Fsl-Logo.png" alt="State Forensic Science Laboratory Logo" loading="lazy">
+        <div>
+            <h1>Nature's Lens: Journal of Forensic Science</h1>
+            <p>Published by State Forensic Science Laboratory, Raipur, Chhattisgarh</p>
+        </div>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+            <img src="#" alt="Toggle Dark Mode" style="height: 24px; width: auto;">
+          
+            </button>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="#" aria-label="Home">Home</a>
+        <div class="dropdown">
+            <a href="#" aria-label="About">About <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href= "about journal.html"> About the Journal</a> <!-- Link to the new page -->
+                <a href="Editorial Board.html">Editorial Board</a> <!-- Link to the new page -->
+                <a href="#">Journal Policy</a>
+                <a href="#">Publication Ethics</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" aria-label="Issues">Issues <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Issue in Progress</a>
+                <a href="#">Current Issue</a>
+                <a href="#">Archive Past Issues</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" aria-label="Submissions">Submissions <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="author-guidline.html">Author Guidelines</a>
+                <a href="#">Submission Site</a>
+                <a href="#">Call for Papers</a>
+                <a href="#">Open Access Options</a>
+                <a href="#">Self Archiving Policy</a>
+                <a href="#">Why Publish with Us?</a>
+            </div>
+        </div>
+        <a href="#" aria-label="Contact">Contact</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles...">
+            <button type="submit" aria-label="Search">Search</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content" id="main-content">
+            <h2>Articles</h2>
+            <div class="article">
+                <h3>Comparative Study of Explosive Residue Detection Techniques</h3>
+                <p>Author: Dr. Sandeep Vaishnav | Date: January 2025</p>
+                <p><a href="#">Read more</a></p>
+            </div>
+            <div class="article">
+                <h3>Advancements in Mass Spectrometry for Forensic Toxicology</h3>
+                <p>Author: Dr. Rajesh Mishra | Date: January 2025</p>
+                <p><a href="#">Read more</a></p>
+            </div>
+            <div class="article">
+                <h3>Innovative Approaches in Narcotic Substance Identification</h3>
+                <p>Author: Dr. Sandeep Vaishnav | Date: January 2025</p>
+                <p><a href="#">Read more</a></p>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active" aria-current="page">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Recent Issues</h2>
+            <p>Volume 01, Issue 01 - January 2025</p>
+            <p>Volume 01, Issue 02 - April 2025</p>
+            <p>Volume 01, Issue 03 - July 2025</p>
+            <p>Volume 01, Issue 04 - October 2025</p>
+
+            <h2>Subscribe</h2>
+            <form action="https://your-backend-url.com/subscribe" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <div id="email-error" style="color: red; display: none;">Please enter a valid email address.</div>
+                <button type="submit" aria-label="Subscribe to the journal">Subscribe</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>Published by State Forensic Science Laboratory, Raipur, Chhattisgarh</p>
+            <p>Address: State Forensic Science Laboratory, Raipur, Chhattisgarh, India</p>
+            <p>Email: natureslens.sfsl@gmail.com | Phone: +91-8962262784</p>
+            <div class="social-media">
+                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Nature's Lens: Journal of Forensic Science. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <script>
+        // Back to Top Button with Smooth Scroll
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        };
+
+        document.getElementById("back-to-top").onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+
+        // Hide Loading Animation
+        window.onload = function() {
+            document.getElementById("loading").style.display = "none";
+        };
+
+        // Dark Mode Toggle
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Form Validation
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const emailInput = document.querySelector('input[type="email"]');
+            const emailError = document.getElementById('email-error');
+            if (!emailInput.checkValidity()) {
+                event.preventDefault();
+                emailError.style.display = 'block';
+            } else {
+                emailError.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

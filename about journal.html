@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Nature Lens: The Forensic Science - A multidisciplinary, peer-reviewed journal published by the State Forensic Science Laboratory, Raipur.">
+    <meta name="keywords" content="forensic science, journal, research, State Forensic Science Laboratory, Raipur">
+    <meta name="author" content="State Forensic Science Laboratory, Raipur">
+    <title>About Nature Lens: The Forensic Science</title>
+    <link rel="icon" type="image/png" href="path/to/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #002855, #005792);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        header img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        nav {
+            background-color: #003f6b;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #005792;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #003f6b;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #about-journal {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #about-journal h2 {
+            color: #002855;
+            margin-bottom: 20px;
+        }
+
+        #about-journal h3, #about-journal h4 {
+            color: #005792;
+            margin-top: 20px;
+        }
+
+        #about-journal ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        #about-journal ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #002855;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-info {
+            font-size: 14px;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ffd700;
+        }
+
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #005792;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #back-to-top:hover {
+            background-color: #003f6b;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="path/to/fsl-logo.png" alt="State Forensic Science Laboratory Logo" loading="lazy">
+        <div>
+            <h1>Nature's Lens: Journal of Forensic Science</h1>
+            <p>Published by State Forensic Science Laboratory, Raipur, Chhattisgarh</p>
+        </div>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <div class="dropdown">
+            <a href="#" aria-label="About">About <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="about-journal.html">About the Journal</a>
+                <a href="#">Editorial Board</a>
+                <a href="#">Journal Policy</a>
+                <a href="#">Publication Ethics</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" aria-label="Issues">Issues <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Issue in Progress</a>
+                <a href="#">Current Issue</a>
+                <a href="#">Archive Past Issues</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" aria-label="Submissions">Submissions <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Author Guidelines</a>
+                <a href="#">Submission Site</a>
+                <a href="#">Call for Papers</a>
+                <a href="#">Open Access Options</a>
+                <a href="#">Self Archiving Policy</a>
+                <a href="#">Why Publish with Us?</a>
+            </div>
+        </div>
+        <a href="#" aria-label="Contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about-journal">
+            <h2>About Nature Lens: The Forensic Science</h2>
+            <p><strong>ISSN:</strong> 07721:350221</p>
+            <p>Nature Lens: The Forensic Science is an international, multidisciplinary, peer-reviewed journal that focuses on various scientific fields related to forensic sciences. It publishes comprehensive reviews, standard research articles, case studies, and special issues on specific topics.</p>
+            <p>The purpose of forensic sciences is to motivate researchers to share their experimental and theoretical findings in as much detail as feasible. Consequently, the journal imposes no limitations on the maximum length of submitted papers. Complete experimental information must be included to ensure that the findings can be replicated.</p>
+            <h3>Areas of Study</h3>
+            <p>Areas of study encompass:</p>
+            <ul>
+                <li>Forensic pathology and histochemistry</li>
+                <li>Chemistry, biochemistry, and toxicology</li>
+                <li>Biology, serology, odontology, psychiatry, and anthropology</li>
+                <li>Digital forensics, physical sciences, firearms, and document examination</li>
+                <li>Research relevant to public health and the intersection of science, medicine, and law</li>
+            </ul>
+            <h3>Journal Features</h3>
+            <p>It operates as a hybrid journal with rigorous peer review and encompasses a wide international viewpoint. This journal serves as the official publication for the Faculty of Forensic and Legal Medicine of the State Forensic Science Laboratory, Raipur.</p>
+            <p>As part of the Journal Forward Series, this journal offers a streamlined, faster publication experience with a strong emphasis on integrity. Authors receive practical support to maximize the reach and discoverability of their work.</p>
+            <h3>Types of Publications</h3>
+            <p>The Journal publishes:</p>
+            <ul>
+                <li>Case Reports</li>
+                <li>Commentaries</li>
+                <li>Letters to the Editor</li>
+                <li>Original Research Papers (Regular Papers)</li>
+                <li>Rapid Communications</li>
+                <li>Review Articles</li>
+                <li>Technical Notes</li>
+            </ul>
+            <h3>Subject Areas</h3>
+            <p>Nature Lens: The Forensic Science publishes papers on all aspects of fundamental and applied sciences. The journal is naturally broad in scope, welcomes submissions from across a range of disciplines, and reports both theoretical and experimental studies.</p>
+            <h4>1. Forensic Sciences</h4>
+            <ul>
+                <li>Criminology</li>
+                <li>Crime scene investigation</li>
+                <li>Computer forensics</li>
+                <li>Forensic anthropology</li>
+                <li>Forensic archaeology</li>
+                <li>Forensic ballistics</li>
+                <li>Bloodstain pattern analysis</li>
+                <li>Biomechanics for Forensics</li>
+                <li>Forensic Imaging</li>
+                <li>Botany for Forensics</li>
+                <li>Chemistry for Forensics</li>
+                <li>Forensic entomology</li>
+                <li>Forensic engineering</li>
+                <li>Forensic genetics</li>
+                <li>Forensic geology</li>
+                <li>Forensic microbes</li>
+                <li>Forensic dentistry</li>
+                <li>Forensic toxicology</li>
+            </ul>
+            <h4>2. Chemical Sciences</h4>
+            <ul>
+                <li>Analytical chemistry</li>
+                <li>Biochemistry</li>
+                <li>Medicinal chemistry</li>
+                <li>Inorganic chemistry</li>
+                <li>Materials chemistry</li>
+                <li>Nuclear chemistry and radioactivity</li>
+                <li>Organic chemistry</li>
+                <li>Physical chemistry</li>
+                <li>Chemical physics</li>
+                <li>Sustainable, green, and environmental chemistry</li>
+                <li>Theoretical and computational chemistry</li>
+            </ul>
+            <h4>3. Biological Sciences</h4>
+            <ul>
+                <li>Microbiology</li>
+                <li>DNA</li>
+                <li>Forensic Imaging</li>
+                <li>Genomics</li>
+                <li>Diatoms</li>
+                <li>Serology</li>
+                <li>Anthropology</li>
+                <li>Botany</li>
+                <li>Engineering</li>
+                <li>Odontology</li>
+                <li>Wildlife Forensics</li>
+                <li>Limnology</li>
+                <li>Entomology</li>
+                <li>Life sciences</li>
+                <li>Biotechnology</li>
+                <li>Molecular Biology</li>
+                <li>Cell Biology</li>
+            </ul>
+            <h4>4. Physical Sciences</h4>
+            <ul>
+                <li>Atomic & Molecular Physics</li>
+                <li>Biophysics</li>
+                <li>Condensed Matter & Materials Physics</li>
+                <li>General & Interdisciplinary Physics</li>
+                <li>Nonlinear dynamics & Complex Systems</li>
+                <li>Nuclear Physics</li>
+                <li>Optics and Spectroscopy</li>
+                <li>Particle Physics</li>
+                <li>Plasma Physics</li>
+                <li>Relativity & Cosmology</li>
+                <li>Astrophysics</li>
+                <li>Atmospheric and Space physics</li>
+                <li>Statistical Physics</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>Published by State Forensic Science Laboratory, Raipur, Chhattisgarh</p>
+            <p>Address: State Forensic Science Laboratory, Raipur, Chhattisgarh, India</p>
+            <p>Email: natureslens.sfsl@gmail.com | Phone: +91-8962262784</p>
+            <div class="social-media">
+                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Nature's Lens: Journal of Forensic Science. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <script>
+        // Back to Top Button with Smooth Scroll
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        };
+
+        document.getElementById("back-to-top").onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+</body>
+
+</html>
